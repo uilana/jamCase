@@ -7,6 +7,92 @@ a {
     color: #fff;
 }
 
+.nav {
+    position: fixed;
+}
+
+.logo__container {
+    margin-bottom: 105px;
+}
+
+.auth {
+    margin-bottom: 70px;
+}
+
+.auth__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.user {
+    margin-bottom: 115px;
+}
+
+.user__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.user__link::before {
+    content: "";
+    width: 181px;
+    height: 0px;
+    /* position: absolute; */
+    left: -313px;
+    z-index: 2;
+    top: 51px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    filter: blur(5px);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.lottery {
+    margin-top: 420px;
+}
+
+.lottery__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+
+/* .lottery__link::before {
+    content: "";
+    width: 246px;
+    height: 0px;
+    background: #fff;
+    position: absolute;
+    left: -313px;
+    z-index: 2;
+    top: 51px;
+} */
+
+.main {
+    margin-left: 350px;
+}
+
 .content__top {
     margin-bottom: 50px;
 }
@@ -19,6 +105,7 @@ a {
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 48px;
+    margin-left: 548px;
 }
 
 .content__text {
@@ -33,8 +120,38 @@ a {
     margin-bottom: 50px;
 }
 
+.content__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content+.content {
-    margin-right: 50px;
+    margin-right: 10px;
+}
+
+.content__price {
+    background: #571182;
+    width: 120px;
+    padding: 5px 50px;
+    height: 35px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .content__price .text-left {
