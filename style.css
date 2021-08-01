@@ -6,9 +6,15 @@
 }
 
 body {
-    background-image: url(img/backgound.jpg);
     background-color: #1A1E31;
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+.container {}
 
 a {
     text-decoration: none;
@@ -17,6 +23,7 @@ a {
 
 .nav {
     position: fixed;
+    margin-right: 19%;
 }
 
 .logo__container {
@@ -24,6 +31,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo {
+    max-width: 83px;
 }
 
 .login {
@@ -93,6 +104,10 @@ a {
     line-height: 42px;
 }
 
+.header {
+    margin-left: 17%;
+}
+
 
 /* .lottery__link::before {
     case: "";
@@ -106,7 +121,6 @@ a {
 } */
 
 .slider {
-    margin-left: 20%;
     margin-bottom: 2%;
 }
 
@@ -116,153 +130,105 @@ a {
 }
 
 .statistics {
-    margin-left: 17%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2%;
+    white-space: nowrap;
 }
 
-.statistics__cases {
-    margin-right: 160px;
+.statistics__item {
+    margin-right: calc(30px + (160 - 30) * ((100vw - 375px) / (1600 - 375)));
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.statistics__cases-number {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    color: crimson;
-}
-
-.statistics__cases-text {
+.statistics__number {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
-    color: crimson;
-    /* color: linear-gradient(270deg, #FF0000 -3.03%, #DEA000 102.18%); */
 }
 
-.statistics__contracts {
-    margin-right: 160px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.statistics__contracts-number {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    color: #00fff0;
-}
-
-.statistics__contracts-text {
+.statistics__text {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
-    color: #00fff0;
 }
 
-.statistics__upgrades {
-    margin-right: 160px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.cases-number {
+    background: linear-gradient(90deg, #FF0000 0%, #DEA000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.statistics__upgrades-number {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    color: #8b008b;
+.cases-text {
+    background: linear-gradient(270deg, #FF0000 -3.03%, #DEA000 102.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.statistics__upgrades-text {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    color: #8b008b;
+.contracts-number {
+    background: linear-gradient(89.72deg, #30FF83 0.22%, #0038FF 99.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.statistics__users {
-    margin-right: 160px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.contracts-text {
+    background: linear-gradient(269.93deg, #30FF83 -1.35%, #0038FF 101.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.statistics__users-number {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    color: #ffd700;
+.upgrades-number {
+    background: linear-gradient(90deg, #00D1ED 0%, #FF00E5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.statistics__users-text {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    color: #ffd700;
+.upgrades-text {
+    background: linear-gradient(270deg, #00D1ED 2.43%, #FF00E5 100.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.statistics__online {
-    margin-right: 160px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.users-number {
+    background: linear-gradient(90deg, #FF00E5 0%, #EBFF00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.statistics__online-number {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    color: #00bfff;
+.users-text {
+    background: linear-gradient(270deg, #FF00E5 -0.82%, #EBFF00 100.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.statistics__online-text {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    color: #00bfff;
+.online-number {
+    background: linear-gradient(270deg, #F1BC00 -11.47%, #00D1FF 101.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-text {
+    background: linear-gradient(90deg, #F1BC00 0%, #00D1FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .promocode {
-    width: 1194px;
+    max-width: 1194px;
     height: 90px;
     background: linear-gradient(99.35deg, #FF0000 -76.35%, rgba(255, 0, 0, 0) 88.67%);
     transform: rotate(-180deg);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 21%;
     margin-bottom: 5%;
 }
 
@@ -323,6 +289,7 @@ a {
     flex-direction: column;
     align-items: center;
     max-width: 155px;
+    margin: 25px;
 }
 
 .case__img {
@@ -338,9 +305,10 @@ a {
     text-align: center;
 }
 
-.case+.case {
+
+/* .case+.case {
     margin-left: 50px;
-}
+} */
 
 .case__price {
     background: #571182;
@@ -360,8 +328,13 @@ a {
     text-align: center;
 }
 
-.case__price .text-left {
+.case__price {
     color: #fff;
+}
+
+.text-left {
+    color: #fff;
+    margin-right: 13%;
 }
 
 .text-right {
@@ -369,5 +342,9 @@ a {
 }
 
 .footer {
+    margin-left: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: none;
 }
