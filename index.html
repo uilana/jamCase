@@ -15,208 +15,214 @@
 
 
 <body>
-    <div class="container">
-        <nav class="nav">
-            <div class="logo__container">
-                <a class="logo__link" href=""><img class="logo" src="img/logo.png" alt="logo"></a>
+    <input id="menu__toggle" type="checkbox">
+    <label class="menu__label" for="menu__toggle">
+            <span>
+                
+            </span> 
+    </label>
+
+    <nav class="nav">
+        <div class="logo__container">
+            <a class="logo__link" href=""><img class="logo" src="img/logo.png" alt="logo"></a>
+        </div>
+        <div class="auth">
+            <div class="login">
+                <a class="login__link" href="">Войти через</a>
+                <img class="login__img" src="img/Steam.png" alt="">
             </div>
-            <div class="auth">
-                <div class="login">
-                    <a class="login__link" href="">Войти через</a>
-                    <img class="login__img" src="img/Steam.png" alt="">
-                </div>
-                <!-- <div class="user">
+            <!-- <div class="user">
                 <a class="user__link" href="">Профиль</a>
             </div> -->
+        </div>
+        <div class="nav__panel">
+            <a class="nav__panel-link" href=""><img src="" alt=""> Контракты</a>
+            <a class="nav__panel-link" href=""><img src="" alt=""> Апгрейды</a>
+        </div>
+        <div class="lottery">
+            <a class="lottery__link" href=""><img src="" alt=""> Розыгрыш</a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <div class="slider">
+                <img class="slider__img" src="img/awp.png" alt="">
+                <img class="slider__img" src="img/awp.png" alt="">
+                <img class="slider__img" src="img/awp.png" alt="">
+                <img class="slider__img" src="img/awp.png" alt="">
+                <img class="slider__img" src="img/awp.png" alt="">
+                <img class="slider__img" src="img/awp.png" alt="">
+                <img class="slider__img" src="img/awp.png" alt="">
+                <img class="slider__img" src="img/awp.png" alt="">
+                <img class="slider__img" src="img/awp.png" alt="">
+                <img class="slider__img" src="img/awp.png" alt="">
             </div>
-            <div class="nav__panel">
-                <a class="nav__panel-link" href=""><img src="" alt=""> Контракты</a>
-                <a class="nav__panel-link" href=""><img src="" alt=""> Апгрейды</a>
-            </div>
-            <div class="lottery">
-                <a class="lottery__link" href=""><img src="" alt=""> Розыгрыш</a>
-            </div>
-        </nav>
-        <header class="header">
-            <div class="container">
-                <div class="slider">
-                    <img class="slider__img" src="img/awp.png" alt="">
-                    <img class="slider__img" src="img/awp.png" alt="">
-                    <img class="slider__img" src="img/awp.png" alt="">
-                    <img class="slider__img" src="img/awp.png" alt="">
-                    <img class="slider__img" src="img/awp.png" alt="">
-                    <img class="slider__img" src="img/awp.png" alt="">
-                    <img class="slider__img" src="img/awp.png" alt="">
-                    <img class="slider__img" src="img/awp.png" alt="">
-                    <img class="slider__img" src="img/awp.png" alt="">
-                    <img class="slider__img" src="img/awp.png" alt="">
+            <div class="statistics">
+                <div class="statistics__item">
+                    <p class="statistics__number cases-number">394 439</p>
+                    <p class="statistics__text cases-text ">Кейсы</p>
                 </div>
-                <div class="statistics">
-                    <div class="statistics__item">
-                        <p class="statistics__number cases-number">394 439</p>
-                        <p class="statistics__text cases-text ">Кейсы</p>
-                    </div>
-                    <div class="statistics__item">
-                        <p class="statistics__number contracts-number">280 349</p>
-                        <p class="statistics__text contracts-text ">Контракты</p>
-                    </div>
-                    <div class="statistics__item">
-                        <p class="statistics__number upgrades-number">498 675</p>
-                        <p class="statistics__text upgrades-text">Апгрейды</p>
-                    </div>
-                    <div class="statistics__item">
-                        <p class="statistics__number users-number">127 893</p>
-                        <p class="statistics__text users-text">Пользователи</p>
-                    </div>
-                    <div class="statistics__item">
-                        <p class="statistics__number online-number">65 437</p>
-                        <p class="statistics__text online-text">Онлайн</p>
-                    </div>
+                <div class="statistics__item">
+                    <p class="statistics__number contracts-number">280 349</p>
+                    <p class="statistics__text contracts-text ">Контракты</p>
                 </div>
-                <div class="promocode">
-                    <span>
+                <div class="statistics__item">
+                    <p class="statistics__number upgrades-number">498 675</p>
+                    <p class="statistics__text upgrades-text">Апгрейды</p>
+                </div>
+                <div class="statistics__item">
+                    <p class="statistics__number users-number">127 893</p>
+                    <p class="statistics__text users-text">Пользователи</p>
+                </div>
+                <div class="statistics__item">
+                    <p class="statistics__number online-number">65 437</p>
+                    <p class="statistics__text online-text">Онлайн</p>
+                </div>
+            </div>
+            <div class="promocode">
+                <span>
                     <p class="promocode__timer">06:10:52:10</p>
                 </span>
-                    <p class="promocode__text">До конца акции </p>
+                <p class="promocode__text">До конца акции </p>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <h3 class="main__title">
+            Кейсы
+        </h3>
+        <div class="cases">
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
                 </div>
-            </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+            <a class="case" href="">
+                <img class="case__img" src="img/case1.png" alt="">
+                <p class="case__text">Case</p>
+                <div class="case__price">
+                    <p class="case__price-text">50р</p>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="text-left">© все права защищены защитой </p>
+        <div class="logo__container">
+            <a class="logo__link" href=""><img class="logo" src="img/logo.png" alt="logo"></a>
+        </div>
+        <p class="text-right">Пользовательское Соглашение</p>
+    </footer>
 
-        </header>
-
-        <main class="main">
-            <h3 class="main__title">
-                Кейсы
-            </h3>
-            <div class="cases">
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-                <a class="case" href="">
-                    <img class="case__img" src="img/case1.png" alt="">
-                    <p class="case__text">Case</p>
-                    <div class="case__price">
-                        <p class="case__price-text">50р</p>
-                    </div>
-                </a>
-            </div>
-        </main>
-        <footer class="footer">
-            <p class="text-left">© все права защищены защитой </p>
-            <div class="logo__container">
-                <a class="logo__link" href=""><img class="logo" src="img/logo.png" alt="logo"></a>
-            </div>
-            <p class="text-right">Пользовательское Соглашение</p>
-        </footer>
-    </div>
 </body>
 
 </html>

@@ -14,16 +14,29 @@ body {
     background-attachment: fixed;
 }
 
-.container {}
-
 a {
     text-decoration: none;
     color: #fff;
 }
 
+#menu__toggle {
+    display: none;
+}
+
+.menu__label {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 15;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    align-items: center;
+}
+
 .nav {
     position: fixed;
-    margin-right: 19%;
 }
 
 .logo__container {
@@ -121,7 +134,10 @@ a {
 } */
 
 .slider {
-    margin-bottom: 2%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .slider__img {
@@ -131,14 +147,14 @@ a {
 
 .statistics {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 2%;
+    margin: 10px;
     white-space: nowrap;
 }
 
 .statistics__item {
-    margin-right: calc(30px + (160 - 30) * ((100vw - 375px) / (1600 - 375)));
+    /* margin-right: calc(30px + (160 - 30) * ((100vw - 375px) / (1600 - 375))); */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -151,6 +167,22 @@ a {
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
+    /* background-size: 3em 3em, 2em 2em;
+    animation-name: stat;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    mix-blend-mode: screens; */
+}
+
+@keyframes stat {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
 }
 
 .statistics__text {
@@ -221,8 +253,27 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
+.cases-number,
+.cases-text,
+.contracts-number,
+.contracts-text,
+.upgrades-number,
+.upgrades-text,
+.users-number,
+.users-text,
+.online-number,
+.online-text {
+    background-size: 3em 3em, 2em 2em;
+    animation-name: stat;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    mix-blend-mode: screens;
+}
+
 .promocode {
-    max-width: 1194px;
+    /* max-width: 1194px; */
     height: 90px;
     background: linear-gradient(99.35deg, #FF0000 -76.35%, rgba(255, 0, 0, 0) 88.67%);
     transform: rotate(-180deg);
