@@ -14,6 +14,19 @@ body {
     background-attachment: fixed;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -324,6 +337,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1190px;
 }
 
 .main__title {
@@ -409,4 +423,67 @@ a {
     justify-content: center;
     align-items: center;
     display: none;
+}
+
+
+/* page contract */
+
+.content {
+    max-width: 974px;
+    width: 100%;
+}
+
+.contract__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.contract__info {}
+
+.info__button {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+}
+
+.drop {
+    width: 100%;
+    min-width: 1060px;
+}
+
+.drop__header {
+    width: 100%;
+    height: 67px;
+    background-color: rgba(0, 255, 194, 0.12);
+}
+
+.drop__body {
+    background-color: rgba(31, 40, 80, 0.38);
+}
+
+.drop__list {
+    background-image: url(img/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.drop__list::after {
+    content: "Откройте любой кейс";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.drop__item {
+    max-width: 150px;
+    visibility: hidden;
+}
+
+.item__img {
+    width: 100%;
 }
