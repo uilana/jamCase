@@ -127,12 +127,50 @@ a {
 }
 
 .lottery__link {
-    font-family: "Roboto", sans-serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden
+}
+
+
+/* .lottery__container {
+    background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0, 0) 100%);
+} */
+
+.lottery__img {
+    justify-content: center;
+    position: absolute;
+}
+
+.lottery__img-L {
+    width: 185px;
+    height: 211px;
+}
+
+.lottery__img-R {
+    width: 185px;
+    height: 211px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    left: 112.1%;
+    right: -87.1%;
+    top: 11.59%;
+    bottom: -40.71%;
+}
+
+.lottery__title {
+    font-family: Russo One;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 42px;
+    line-height: 85.69%;
+    display: flex;
+    align-items: center;
     text-align: center;
+    color: #FFFFFF;
+    border: 3px solid rgba(81, 161, 255, 0.48);
+    text-shadow: 0px 0px 6px #12D4FF;
+    margin-left: 30px;
+    background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0, 0) 100%)
 }
 
 .header {
@@ -429,6 +467,10 @@ a {
 .content {
     max-width: 974px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .contract__list {
@@ -493,6 +535,9 @@ a {
 .drop {
     width: 100%;
     min-width: 1060px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .drop__header {
@@ -516,10 +561,12 @@ a {
 }
 
 .drop__list {
-    background-image: url(img/Vector.svg);
+    background-image: url(img/Rifle.svg);
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    margin-bottom: 126px;
+    height: 330px;
 }
 
 .drop__list::after {
