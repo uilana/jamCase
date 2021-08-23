@@ -126,10 +126,19 @@ a {
     text-align: center;
 }
 
+.lottery {
+    max-width: 247px;
+    max-height: 164px;
+    width: 100%;
+    height: 100%;
+}
+
 .lottery__link {
     text-align: center;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -138,23 +147,26 @@ a {
 } */
 
 .lottery__img {
-    justify-content: center;
     position: absolute;
 }
 
 .lottery__img-L {
     width: 185px;
     height: 211px;
+    position: absolute;
+    top: 0;
 }
 
 .lottery__img-R {
     width: 185px;
     height: 211px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    /* transform: matrix(-1, 0, 0, 1, 0, 0);
     left: 112.1%;
     right: -87.1%;
     top: 11.59%;
-    bottom: -40.71%;
+    bottom: -40.71%; */
+    position: absolute;
+    top: 0;
 }
 
 .lottery__title {
@@ -163,14 +175,12 @@ a {
     font-weight: normal;
     font-size: 42px;
     line-height: 85.69%;
-    display: flex;
-    align-items: center;
     text-align: center;
     color: #FFFFFF;
-    border: 3px solid rgba(81, 161, 255, 0.48);
     text-shadow: 0px 0px 6px #12D4FF;
-    margin-left: 30px;
-    background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0, 0) 100%)
+    margin: 0 auto;
+    background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0, 0) 100%);
+    -webkit-text-stroke: 3px solid rgba(81, 161, 255, 0.48);
 }
 
 .header {
@@ -534,7 +544,7 @@ a {
 
 .drop {
     width: 100%;
-    min-width: 1060px;
+    max-width: 1060px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -571,15 +581,18 @@ a {
 
 .drop__list::after {
     content: "Откройте любой кейс";
-    position: absolute;
-    top: 0;
-    left: 0;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
     color: rgba(255, 255, 255, 0.62);
+    top: 0;
+    left: 0;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .drop__item {
