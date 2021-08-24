@@ -1,37 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* background-color: #020017; */
-}
-
-body {
-    background-color: #1A1E31;
-    background-image: url(img/background.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    color: #fff;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
 #menu__toggle {
     display: none;
 }
@@ -56,17 +22,29 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.logo__container {
-    margin-bottom: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &__panel {
+        display: flex;
+        flex-direction: column;
+    }
+    &__panel-link {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 17%;
+        text-align: center;
+    }
 }
 
 .logo {
     max-width: 83px;
+    &__container {
+        margin-bottom: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .login {
@@ -74,16 +52,15 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.login__text {
-    font-family: Impact;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 3%;
-    text-align: center;
+    &__text {
+        font-family: Impact;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 3%;
+        text-align: center;
+    }
 }
 
 
@@ -111,34 +88,18 @@ a {
     filter: blur(5px);
 } */
 
-.nav__panel {
-    display: flex;
-    flex-direction: column;
-}
-
-.nav__panel-link {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-    margin-bottom: 17%;
-    text-align: center;
-}
-
 .lottery {
     max-width: 247px;
     max-height: 164px;
     width: 100%;
     height: 100%;
-}
-
-.lottery__link {
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+    &__link {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
@@ -182,22 +143,6 @@ a {
     background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0, 0) 100%);
     -webkit-text-stroke: 3px solid rgba(81, 161, 255, 0.48);
 }
-
-.header {
-    margin-left: 17%;
-}
-
-
-/* .lottery__link::before {
-    case: "";
-    width: 246px;
-    height: 0px;
-    background: #fff;
-    position: absolute;
-    left: -313px;
-    z-index: 2;
-    top: 51px;
-} */
 
 .slider {
     padding: 0 10px;
@@ -377,229 +322,6 @@ a {
     padding: 28px;
 }
 
-.main {
+.header {
     margin-left: 17%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1190px;
-}
-
-.main__title {
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-    margin-bottom: 48px;
-    text-align: center;
-}
-
-.cases {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1000px;
-}
-
-.case {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    max-width: 155px;
-    margin: 25px;
-}
-
-.case__img {
-    width: 100%;
-}
-
-.case__text {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-}
-
-
-/* .case+.case {
-    margin-left: 50px;
-} */
-
-.case__price {
-    background: #571182;
-    width: 120px;
-    /* padding   : 5px 50px; */
-    height: 35px;
-    border-radius: 90px;
-}
-
-.case__price-text {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    padding: 5px;
-    text-align: center;
-}
-
-.case__price {
-    color: #fff;
-}
-
-.text-left {
-    color: #fff;
-    margin-right: 13%;
-}
-
-.text-right {
-    color: #fff;
-}
-
-.footer {
-    margin-left: 18%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
-
-/* page contract */
-
-.content {
-    max-width: 974px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.contract__list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10px;
-}
-
-.contract__info {
-    text-align: center;
-}
-
-.contract {
-    align-items: center;
-    text-align: center;
-}
-
-.info__button {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration-line: underline;
-    text-align: center;
-    margin: 25px 0;
-}
-
-.contract__chance {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.contract__create {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-    color: rgba(0, 0, 0, 0.19);
-    background: rgba(255, 0, 0, 0.52);
-    border-radius: 45px;
-    padding: 14px 50px;
-    margin-bottom: 50px;
-    margin-top: 5px;
-}
-
-.contract__create-text {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: rgba(0, 0, 0, 0.19);
-}
-
-.drop {
-    width: 100%;
-    max-width: 1060px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.drop__header {
-    width: 100%;
-    height: 67px;
-    background-color: rgba(0, 255, 194, 0.12);
-}
-
-.drop__title {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
-    padding: 20px 35px;
-}
-
-.drop__body {
-    background-color: rgba(31, 40, 80, 0.38);
-}
-
-.drop__list {
-    background-image: url(img/Rifle.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    margin-bottom: 126px;
-    height: 330px;
-}
-
-.drop__list::after {
-    content: "Откройте любой кейс";
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: rgba(255, 255, 255, 0.62);
-    top: 0;
-    left: 0;
-    height: 6em;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.drop__item {
-    max-width: 150px;
-    visibility: hidden;
-}
-
-.item__img {
-    width: 100%;
 }
