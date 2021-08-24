@@ -1,0 +1,75 @@
+@media (max-width:900px) {
+    .nav {
+        width: 100vw;
+        height: 100%;
+        visibility: hidden;
+        background-color: #000;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 3;
+        align-items: center;
+    }
+    .header {
+        margin-left: 0;
+    }
+    .main {
+        margin-left: 0;
+    }
+    #menu__toggle {
+        z-index: 15;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+    }
+    .menu__label>span,
+    .menu__label>span::before,
+    .menu__label>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+    .menu__label>span::before {
+        content: "";
+        top: -8px;
+    }
+    .menu__label>span::after {
+        content: "";
+        top: 8px;
+    }
+    #menu__toggle:checked~.menu__label>span::after {
+        transform: rotate(90deg);
+        top: 0;
+        left: 0;
+    }
+    #menu__toggle:checked~.menu__label>span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked~.menu__label>span::before {
+        transform: rotate(0);
+        top: 0;
+        left: 0;
+    }
+    #menu__toggle:checked~.nav {
+        visibility: visible;
+        left: 0;
+    }
+    .logo__container {
+        margin-top: 7%;
+        margin-bottom: 5%;
+    }
+    .login {
+        margin-bottom: 5%;
+    }
+    .nav__panel-link {
+        margin-bottom: 10%;
+    }
+    .lottery {
+        margin-top: 15%;
+    }
+    .slider {
+        margin-left: 50px;
+    }
+}
