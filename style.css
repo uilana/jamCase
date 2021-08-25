@@ -139,6 +139,7 @@ a {
     overflow: hidden;
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 
@@ -181,6 +182,10 @@ a {
     margin: 0 auto;
     background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0, 0) 100%);
     -webkit-text-stroke: 3px solid rgba(81, 161, 255, 0.48);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .header {
@@ -602,4 +607,126 @@ a {
 
 .item__img {
     width: 100%;
+}
+
+.chicken__img {
+    margin-right: 188px;
+}
+
+.chicken {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.chicken__info {
+    flex-wrap: wrap;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chicken__title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.chicken__price {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 44px;
+}
+
+.opening__text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.chicken__button {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.19);
+    background: rgba(255, 0, 0, 0.52);
+    border-radius: 45px;
+    padding: 17px 128px;
+    margin-bottom: 50px;
+    margin-top: 5px;
+}
+
+.chicken__button-text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.19);
+}
+
+.сontents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.сontent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    margin: 26px;
+}
+
+.сontent__text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.сontent__knife-fly {
+    background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+}
+
+.сontent__ak {
+    background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+}
+
+.сontent__gloves {
+    background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+}
+
+.сontent__M4A1 {
+    background: linear-gradient(180deg, rgba(255, 230, 1, 0.18) 0%, rgba(51, 255, 0, 0.18) 100%);
+}
+
+.сontent__knife {
+    background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
 }
