@@ -1,10 +1,10 @@
-@import "global",
-"vars",
-"footer",
-"header",
+@import "vars",
 "libs",
+"fonts",
+"global",
 "media",
-"fonts";
+"header",
+"footer";
 .main {
     margin-left: 17%;
     display: flex;
@@ -208,4 +208,113 @@
 
 .item__img {
     width: 100%;
+}
+
+.chicken {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    &__img {
+        margin-right: 188px;
+    }
+    &__info {
+        flex-wrap: wrap;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+    &__price {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 44px;
+    }
+    &__opening-text {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__button {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+        color: rgba(0, 0, 0, 0.19);
+        background: rgba(255, 0, 0, 0.52);
+        border-radius: 45px;
+        padding: 17px 128px;
+        margin-bottom: 50px;
+        margin-top: 5px;
+    }
+    &__button-text {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: rgba(0, 0, 0, 0.19);
+    }
+}
+
+.сontents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.сontent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    margin: 26px;
+    &__text {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    &__knife-fly {
+        background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+    }
+    &__ak {
+        background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+    }
+    &__gloves {
+        background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+    }
+    &__M4A1 {
+        background: linear-gradient(180deg, rgba(255, 230, 1, 0.18) 0%, rgba(51, 255, 0, 0.18) 100%);
+    }
+    &__knife {
+        background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+    }
 }
