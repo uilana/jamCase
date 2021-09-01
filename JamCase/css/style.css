@@ -734,7 +734,7 @@ a {
 }
 
 .drop__list {
-  background-image: url(img/Rifle.svg);
+  background-image: url(../image/Rifle.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -864,6 +864,18 @@ a {
   color: rgba(0, 0, 0, 0.19);
 }
 
+.chicken__opening-button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
 .сontents {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -935,6 +947,166 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 138, 1, 0.147)), to(rgba(255, 0, 0, 0.18)));
   background: -o-linear-gradient(top, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
   background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+}
+
+@media (max-width: 900px) {
+  .nav {
+    width: 100vw;
+    height: 100%;
+    visibility: hidden;
+    background-color: #0e0029;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .header {
+    margin-left: 0;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  #menu__toggle {
+    z-index: 15;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+  }
+
+  .menu__label > span,
+  .menu__label > span::before,
+  .menu__label > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .menu__label > span::before {
+    content: "";
+    top: -8px;
+  }
+
+  .menu__label > span::after {
+    content: "";
+    top: 8px;
+  }
+
+  #menu__toggle:checked ~ .menu__label > span::after {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    top: 0;
+    left: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__label > span {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__label > span::before {
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
+    top: 0;
+    left: 0;
+  }
+
+  #menu__toggle:checked ~ .nav {
+    visibility: visible;
+    left: 0;
+  }
+
+  .header {
+    margin-left: 50px;
+  }
+
+  .logo__container {
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
+
+  .login {
+    margin-bottom: 5%;
+  }
+
+  .nav__panel-link {
+    margin-bottom: 10%;
+  }
+
+  .lottery {
+    margin-top: 15%;
+  }
+
+  .lottery__title {
+    right: -50%;
+  }
+
+  .slider__img {
+    width: 100px;
+    height: 60px;
+  }
+
+  .statistics {
+    display: none;
+  }
+
+  .promocode__timer {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .promocode__text {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .contract__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .chicken {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .chicken__img {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .chicken__opening-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .chicken__button {
+    padding: 15px 65px;
+  }
 }
 
 .webp body{ background-image: url(img/background.webp); }
