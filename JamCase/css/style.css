@@ -26,7 +26,7 @@
 
 body {
   background-color: #1A1E31;
-  background-image: url(img/background.png);
+  background-image: url(../image/background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -181,16 +181,11 @@ a {
 }
 
 .lottery__link {
-  text-align: center;
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 100%;
   display: block;
-}
-
-.lottery__img {
-  position: absolute;
 }
 
 .lottery__img-L {
@@ -949,6 +944,190 @@ a {
   background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
 }
 
+.chickenSlider {
+  padding: 0 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  width: 823px;
+  height: 193.97px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 45px;
+  margin-bottom: 117px;
+}
+
+.chickenSlider__knife-fly {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 1, 32, 0.147)), to(rgba(97, 0, 255, 0.18)));
+  background: -o-linear-gradient(top, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+  background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+  border-radius: 45px;
+  width: 118px;
+  height: 158px;
+  margin: 13px;
+}
+
+.chickenSlider__img {
+  width: 102.09px;
+  height: 102.09px;
+  margin: 10px;
+}
+
+.chickenSlider__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.chickenSlider__ak {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 138, 1, 0.147)), to(rgba(255, 0, 0, 0.18)));
+  background: -o-linear-gradient(top, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+  background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+  border-radius: 45px;
+  width: 118px;
+  height: 163px;
+  margin: 10px;
+}
+
+.chickenSlider__gloves {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 1, 32, 0.147)), to(rgba(97, 0, 255, 0.18)));
+  background: -o-linear-gradient(top, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+  background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+  border-radius: 45px;
+  width: 118px;
+  height: 163px;
+  margin: 10px;
+}
+
+.chickenSlider__M4A1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 230, 1, 0.18)), to(rgba(51, 255, 0, 0.18)));
+  background: -o-linear-gradient(top, rgba(255, 230, 1, 0.18) 0%, rgba(51, 255, 0, 0.18) 100%);
+  background: linear-gradient(180deg, rgba(255, 230, 1, 0.18) 0%, rgba(51, 255, 0, 0.18) 100%);
+  border-radius: 45px;
+  width: 118px;
+  height: 163px;
+  margin: 10px;
+}
+
+.chickenSlider__knife {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 138, 1, 0.147)), to(rgba(255, 0, 0, 0.18)));
+  background: -o-linear-gradient(top, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+  background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+  border-radius: 45px;
+  width: 118px;
+  height: 163px;
+  margin: 10px;
+}
+
+.random {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.random__ak {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 138, 1, 0.147)), to(rgba(255, 0, 0, 0.18)));
+  background: -o-linear-gradient(top, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+  background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+  width: 150px;
+  height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+
+.random__img {
+  padding: 10px 5px;
+}
+
+.random__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  padding: 5px 15px;
+}
+
+.random__info {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-bottom: 17px;
+}
+
+.random__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 54px;
+}
+
+.random__button-again {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(219, 255, 0, 0.1)), to(rgba(0, 255, 10, 0.1)));
+  background: -o-linear-gradient(top, rgba(219, 255, 0, 0.1) 0%, rgba(0, 255, 10, 0.1) 100%);
+  background: linear-gradient(180deg, rgba(219, 255, 0, 0.1) 0%, rgba(0, 255, 10, 0.1) 100%);
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 18px 20px;
+  margin-right: 132px;
+}
+
+.random__button-sell {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(219, 255, 0, 0.1)), to(rgba(0, 255, 10, 0.1)));
+  background: -o-linear-gradient(top, rgba(219, 255, 0, 0.1) 0%, rgba(0, 255, 10, 0.1) 100%);
+  background: linear-gradient(180deg, rgba(219, 255, 0, 0.1) 0%, rgba(0, 255, 10, 0.1) 100%);
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 18px 20px;
+}
+
 @media (max-width: 900px) {
   .nav {
     width: 100vw;
@@ -1109,4 +1288,4 @@ a {
   }
 }
 
-.webp body{ background-image: url(img/background.webp); }
+.webp body{ background-image: url(../image/background.webp); }
