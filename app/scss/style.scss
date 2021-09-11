@@ -41,6 +41,8 @@
     margin: 25px;
     &__img {
         width: 100%;
+        max-width: 160px;
+        max-height: 120px;
     }
     &__text {
         font-family: "Roboto", sans-serif;
@@ -284,8 +286,13 @@
         line-height: 42px;
         text-align: center;
         color: #FFFFFF;
-        margin-right: 15px;
         margin-bottom: 25px;
+        padding: 0 20px;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+    }
+    &__opening-button:focus {
+        background: #920F17;
     }
 }
 
@@ -315,18 +322,28 @@
     }
     &__knife-fly {
         background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+        border: 3px solid #6100FF;
+        box-sizing: border-box;
     }
     &__ak {
         background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+        border: 3px solid #FF0000;
+        box-sizing: border-box;
     }
     &__gloves {
         background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+        border: 3px solid #6100FF;
+        box-sizing: border-box;
     }
     &__M4A1 {
         background: linear-gradient(180deg, rgba(255, 230, 1, 0.18) 0%, rgba(51, 255, 0, 0.18) 100%);
+        border: 3px solid #33FF00;
+        box-sizing: border-box;
     }
     &__knife {
         background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+        border: 3px solid #FF0000;
+        box-sizing: border-box;
     }
 }
 
@@ -344,62 +361,67 @@
     align-items: center;
     margin-top: 45px;
     margin-bottom: 117px;
-}
-
-.chickenSlider__knife-fly {
-    background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
-    border-radius: 45px;
-    width: 118px;
-    height: 158px;
-    margin: 13px;
-}
-
-.chickenSlider__img {
-    width: 102.09px;
-    height: 102.09px;
-    margin: 10px;
-}
-
-.chickenSlider__text {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 12px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.chickenSlider__ak {
-    background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
-    border-radius: 45px;
-    width: 118px;
-    height: 163px;
-    margin: 10px;
-}
-
-.chickenSlider__gloves {
-    background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
-    border-radius: 45px;
-    width: 118px;
-    height: 163px;
-    margin: 10px;
-}
-
-.chickenSlider__M4A1 {
-    background: linear-gradient(180deg, rgba(255, 230, 1, 0.18) 0%, rgba(51, 255, 0, 0.18) 100%);
-    border-radius: 45px;
-    width: 118px;
-    height: 163px;
-    margin: 10px;
-}
-
-.chickenSlider__knife {
-    background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
-    border-radius: 45px;
-    width: 118px;
-    height: 163px;
-    margin: 10px;
+    border: 3px solid #FF0000;
+    box-sizing: border-box;
+    &__knife-fly {
+        background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+        border-radius: 45px;
+        width: 118px;
+        height: 158px;
+        margin: 13px;
+        border: 3px solid #6100FF;
+        box-sizing: border-box;
+    }
+    &__img {
+        width: 102.09px;
+        height: 102.09px;
+        margin: 10px;
+    }
+    &__text {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__ak {
+        background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+        border-radius: 45px;
+        width: 118px;
+        height: 163px;
+        margin: 10px;
+        border: 3px solid #FF0000;
+        box-sizing: border-box;
+    }
+    &__gloves {
+        background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+        border-radius: 45px;
+        width: 118px;
+        height: 163px;
+        margin: 10px;
+        border: 3px solid #6100FF;
+        box-sizing: border-box;
+    }
+    &__M4A1 {
+        background: linear-gradient(180deg, rgba(255, 230, 1, 0.18) 0%, rgba(51, 255, 0, 0.18) 100%);
+        border-radius: 45px;
+        width: 118px;
+        height: 163px;
+        margin: 10px;
+        border: 3px solid #33FF00;
+        box-sizing: border-box;
+    }
+    &__knife {
+        background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+        border-radius: 45px;
+        width: 118px;
+        height: 163px;
+        margin: 10px;
+        border: 3px solid #FF0000;
+        box-sizing: border-box;
+    }
 }
 
 .random {
@@ -420,6 +442,8 @@
     // justify-content: center;
     align-items: center;
     margin-bottom: 5px;
+    border: 3px solid #FF0000;
+    box-sizing: border-box;
 }
 
 .random__img {
@@ -464,6 +488,8 @@
     color: #FFFFFF;
     padding: 18px 20px;
     margin-right: 132px;
+    border: 1px solid #00FF0A;
+    box-sizing: border-box;
 }
 
 .random__button-sell {
@@ -476,4 +502,6 @@
     line-height: 19px;
     color: #FFFFFF;
     padding: 18px 20px;
+    border: 1px solid #00FF0A;
+    box-sizing: border-box;
 }

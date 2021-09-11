@@ -86,6 +86,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 17%;
 }
 
 .nav__panel {
@@ -189,14 +190,13 @@ a {
 }
 
 .lottery__img-L {
-  width: 185px;
   height: 211px;
   position: absolute;
   top: 0;
+  width: 100%;
 }
 
 .lottery__img-R {
-  width: 185px;
   height: 211px;
   /* transform: matrix(-1, 0, 0, 1, 0, 0);
         left: 112.1%;
@@ -205,6 +205,7 @@ a {
         bottom: -40.71%; */
   position: absolute;
   top: 0;
+  width: 100%;
 }
 
 .lottery__title {
@@ -555,6 +556,8 @@ a {
 
 .case__img {
   width: 100%;
+  max-width: 160px;
+  max-height: 120px;
 }
 
 .case__text {
@@ -867,8 +870,15 @@ a {
   line-height: 42px;
   text-align: center;
   color: #FFFFFF;
-  margin-right: 15px;
   margin-bottom: 25px;
+  padding: 0 20px;
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.chicken__opening-button:focus {
+  background: #920F17;
 }
 
 .сontents {
@@ -918,30 +928,45 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 1, 32, 0.147)), to(rgba(97, 0, 255, 0.18)));
   background: -o-linear-gradient(top, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
   background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+  border: 3px solid #6100FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .сontent__ak {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 138, 1, 0.147)), to(rgba(255, 0, 0, 0.18)));
   background: -o-linear-gradient(top, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
   background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+  border: 3px solid #FF0000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .сontent__gloves {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 1, 32, 0.147)), to(rgba(97, 0, 255, 0.18)));
   background: -o-linear-gradient(top, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
   background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
+  border: 3px solid #6100FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .сontent__M4A1 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 230, 1, 0.18)), to(rgba(51, 255, 0, 0.18)));
   background: -o-linear-gradient(top, rgba(255, 230, 1, 0.18) 0%, rgba(51, 255, 0, 0.18) 100%);
   background: linear-gradient(180deg, rgba(255, 230, 1, 0.18) 0%, rgba(51, 255, 0, 0.18) 100%);
+  border: 3px solid #33FF00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .сontent__knife {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 138, 1, 0.147)), to(rgba(255, 0, 0, 0.18)));
   background: -o-linear-gradient(top, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
   background: linear-gradient(180deg, rgba(255, 138, 1, 0.147) 0%, rgba(255, 0, 0, 0.18) 100%);
+  border: 3px solid #FF0000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .chickenSlider {
@@ -965,6 +990,9 @@ a {
           align-items: center;
   margin-top: 45px;
   margin-bottom: 117px;
+  border: 3px solid #FF0000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .chickenSlider__knife-fly {
@@ -975,6 +1003,9 @@ a {
   width: 118px;
   height: 158px;
   margin: 13px;
+  border: 3px solid #6100FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .chickenSlider__img {
@@ -1001,6 +1032,9 @@ a {
   width: 118px;
   height: 163px;
   margin: 10px;
+  border: 3px solid #FF0000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .chickenSlider__gloves {
@@ -1011,6 +1045,9 @@ a {
   width: 118px;
   height: 163px;
   margin: 10px;
+  border: 3px solid #6100FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .chickenSlider__M4A1 {
@@ -1021,6 +1058,9 @@ a {
   width: 118px;
   height: 163px;
   margin: 10px;
+  border: 3px solid #33FF00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .chickenSlider__knife {
@@ -1031,6 +1071,9 @@ a {
   width: 118px;
   height: 163px;
   margin: 10px;
+  border: 3px solid #FF0000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .random {
@@ -1060,6 +1103,9 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 5px;
+  border: 3px solid #FF0000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .random__img {
@@ -1112,6 +1158,9 @@ a {
   color: #FFFFFF;
   padding: 18px 20px;
   margin-right: 132px;
+  border: 1px solid #00FF0A;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .random__button-sell {
@@ -1126,6 +1175,9 @@ a {
   line-height: 19px;
   color: #FFFFFF;
   padding: 18px 20px;
+  border: 1px solid #00FF0A;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 900px) {
@@ -1285,6 +1337,15 @@ a {
 
   .chicken__button {
     padding: 15px 65px;
+  }
+
+  .contract__create {
+    margin: 30px;
+  }
+
+  .drop {
+    margin: 30px;
+    width: 80%;
   }
 }
 
