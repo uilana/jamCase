@@ -251,8 +251,8 @@ a {
   background: radial-gradient(60.18% 50% at 50% 50%, #BB0000 0%, rgba(187, 0, 0, 0.276042) 70.83%, rgba(187, 0, 0, 0) 100%);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  width: 120px;
-  height: 80px;
+  width: 110px;
+  height: 70px;
 }
 
 .statistics {
@@ -1180,10 +1180,179 @@ a {
           box-sizing: border-box;
 }
 
+.upgrade__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 31px;
+  position: relative;
+}
+
+.skin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 184px;
+}
+
+.skin__selection {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skin__selection-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.notChosen {
+  background: url(../image/circle.png);
+  background-repeat: no-repeat;
+  max-height: 227px;
+  height: 227px;
+  max-width: 227px;
+  width: 100%;
+  height: 100%;
+}
+
+.notChosen__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.search__form {
+  margin-right: 370px;
+  margin-top: 26px;
+  margin-bottom: 28px;
+}
+
 .upgrade__сontents {
   overflow-y: scroll;
-  width: 500px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 600px;
+  border-radius: 15px;
+  padding: 1rem;
+  overflow-y: auto;
+  direction: ltr;
+  scrollbar-color: #000 #9E9E9E;
+  scrollbar-width: thin;
+}
+
+.upgrade__сontents::-webkit-scrollbar {
+  width: 20px;
+}
+
+.upgrade__сontents::-webkit-scrollbar-track {
+  background-color: #9E9E9E;
+  border-radius: 100px;
+}
+
+.upgrade__сontents::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  background-color: #000;
+}
+
+.upgrade__сontents::before {
+  content: "";
+  width: 665px;
+  height: 0px;
+  background: #9E9E9E;
+  position: absolute;
+  left: 480px;
+  z-index: 2;
+  border: 3px solid #9E9E9E;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.upgrade__section {
+  background: rgba(239, 239, 239, 0.1);
+  max-width: 1133px;
+  max-height: 684px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.upgrade__objects {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.upgrade__objects-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 130px;
+  margin-right: 120px;
+}
+
+.upgrade__objects-button {
+  margin-top: 30px;
+  margin-bottom: 200px;
+  background: -o-radial-gradient(50% 50%, 96.67% 96.67%, #BB0000 0%, rgba(187, 0, 0, 0) 100%);
+  background: radial-gradient(96.67% 96.67% at 50% 50%, #BB0000 0%, rgba(187, 0, 0, 0) 100%);
+  border-radius: 45px;
+  padding: 12px 39px;
+  margin-left: 30px;
 }
 
 @media (max-width: 910px) {
@@ -1360,3 +1529,5 @@ a {
 }
 
 .webp body{ background-image: url(../image/background.webp); }
+
+.webp .notChosen{ background: url(../image/circle.webp); }
