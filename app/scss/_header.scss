@@ -35,6 +35,13 @@
         line-height: 42px;
         margin-bottom: 17%;
         text-align: center;
+        transition: all 1s;
+        border-bottom: 3px solid transparent;
+    }
+    &__panel-link:hover {
+        // text-decoration: underline #FFFFFF;
+        border-bottom: 3px solid #FFFFFF;
+        transform: scale(1.1);
     }
 }
 
@@ -66,27 +73,27 @@
 
 
 /* .user {
-    margin-bottom: 115px;
+margin-bottom: 115px;
 }
 
 .user__link {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
+font-family: "Roboto", sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
 }
 
 .user__link::before {
-    case: "";
-    width: 181px;
-    height: 0px;
-    position: absolute;s
-    left: -313px;
-    z-index: 2;
-    top: 51px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    filter: blur(5px);
+case: "";
+width: 181px;
+height: 0px;
+position: absolute;s
+left: -313px;
+z-index: 2;
+top: 51px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+filter: blur(5px);
 } */
 
 .lottery {
@@ -94,6 +101,36 @@
     max-height: 164px;
     width: 100%;
     height: 100%;
+    transition: all 0.5s;
+    &:hover &__img-L {
+        animation-name: move-l;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+    }
+    &:hover &__img-R {
+        animation-name: move-r;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+    }
+    &:hover &__title {
+        animation-name: title-move;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+        animation-fill-mode: forwards;
+        background: none;
+    }
+    &:hover &__title {
+        transform: scale(1.1);
+    }
     &__link {
         position: relative;
         overflow: hidden;
@@ -107,15 +144,12 @@
         position: absolute;
         top: 0;
         width: 100%;
+        // animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        // animation-timing-function: steps(3, start);
     }
     &__img-R {
         // width: 185px;
         height: 211px;
-        /* transform: matrix(-1, 0, 0, 1, 0, 0);
-        left: 112.1%;
-        right: -87.1%;
-        top: 11.59%;
-        bottom: -40.71%; */
         position: absolute;
         top: 0;
         width: 100%;
@@ -134,14 +168,43 @@
         -webkit-text-stroke: 3px solid rgba(81, 161, 255, 0.48);
         position: absolute;
         bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
+        width: 100%;
+        transition: all 0.5s;
+    }
+}
+
+@keyframes move-l {
+    from {
+        transform: translate(-100px, 100px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes move-r {
+    from {
+        transform: translate(100px, 100px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes title-move {
+    from {
+        transform: scale(1);
+        transform: translateY(1);
+    }
+    to {
+        transform: scale(1.5);
+        transform: translateY(-25px);
     }
 }
 
 
 /* .lottery__container {
-    background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0, 0) 100%);
+background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0, 0) 100%);
 } */
 
 .slider {
@@ -185,12 +248,12 @@
         font-size: 18px;
         line-height: 21px;
         /* background-size: 3em 3em, 2em 2em;
-        animation-name: stat;
-        animation-duration: 2s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        mix-blend-mode: screens; */
+animation-name: stat;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+mix-blend-mode: screens; */
     }
     &__text {
         font-family: "Roboto", sans-serif;

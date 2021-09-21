@@ -107,6 +107,17 @@ a {
   line-height: 42px;
   margin-bottom: 17%;
   text-align: center;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  border-bottom: 3px solid transparent;
+}
+
+.nav__panel-link:hover {
+  border-bottom: 3px solid #FFFFFF;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .logo {
@@ -151,27 +162,27 @@ a {
 }
 
 /* .user {
-    margin-bottom: 115px;
+margin-bottom: 115px;
 }
 
 .user__link {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
+font-family: "Roboto", sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
 }
 
 .user__link::before {
-    case: "";
-    width: 181px;
-    height: 0px;
-    position: absolute;s
-    left: -313px;
-    z-index: 2;
-    top: 51px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    filter: blur(5px);
+case: "";
+width: 181px;
+height: 0px;
+position: absolute;s
+left: -313px;
+z-index: 2;
+top: 51px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+filter: blur(5px);
 } */
 
 .lottery {
@@ -179,6 +190,63 @@ a {
   max-height: 164px;
   width: 100%;
   height: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.lottery:hover .lottery__img-L {
+  -webkit-animation-name: move-l;
+          animation-name: move-l;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.lottery:hover .lottery__img-R {
+  -webkit-animation-name: move-r;
+          animation-name: move-r;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.lottery:hover .lottery__title {
+  -webkit-animation-name: title-move;
+          animation-name: title-move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background: none;
+}
+
+.lottery:hover .lottery__title {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .lottery__link {
@@ -198,11 +266,6 @@ a {
 
 .lottery__img-R {
   height: 211px;
-  /* transform: matrix(-1, 0, 0, 1, 0, 0);
-        left: 112.1%;
-        right: -87.1%;
-        top: 11.59%;
-        bottom: -40.71%; */
   position: absolute;
   top: 0;
   width: 100%;
@@ -223,14 +286,94 @@ a {
   -webkit-text-stroke: 3px solid rgba(81, 161, 255, 0.48);
   position: absolute;
   bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@-webkit-keyframes move-l {
+  from {
+    -webkit-transform: translate(-100px, 100px);
+            transform: translate(-100px, 100px);
+  }
+
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes move-l {
+  from {
+    -webkit-transform: translate(-100px, 100px);
+            transform: translate(-100px, 100px);
+  }
+
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes move-r {
+  from {
+    -webkit-transform: translate(100px, 100px);
+            transform: translate(100px, 100px);
+  }
+
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes move-r {
+  from {
+    -webkit-transform: translate(100px, 100px);
+            transform: translate(100px, 100px);
+  }
+
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes title-move {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+  }
+
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+@keyframes title-move {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+  }
+
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
 }
 
 /* .lottery__container {
-    background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0, 0) 100%);
+background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0, 0) 100%);
 } */
 
 .slider {
@@ -302,12 +445,12 @@ a {
   font-size: 18px;
   line-height: 21px;
   /* background-size: 3em 3em, 2em 2em;
-        animation-name: stat;
-        animation-duration: 2s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        mix-blend-mode: screens; */
+animation-name: stat;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+mix-blend-mode: screens; */
 }
 
 .statistics__text {
@@ -835,6 +978,15 @@ a {
           align-items: center;
   max-width: 155px;
   margin: 25px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.case:hover .case__price {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .case__img {
@@ -858,6 +1010,9 @@ a {
   /* padding   : 5px 50px; */
   height: 35px;
   border-radius: 90px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .case__price-text {

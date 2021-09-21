@@ -41,6 +41,10 @@
     align-items: center;
     max-width: 155px;
     margin: 25px;
+    transition: all 0.5s;
+    &:hover &__price {
+        transform: scale(1.1);
+    }
     &__img {
         width: 100%;
         max-width: 160px;
@@ -60,6 +64,7 @@
         /* padding   : 5px 50px; */
         height: 35px;
         border-radius: 90px;
+        transition: all 0.5s;
     }
     &__price-text {
         font-family: "Roboto", sans-serif;
