@@ -87,6 +87,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 17%;
+  margin-left: 1%;
 }
 
 .nav__panel {
@@ -377,7 +378,7 @@ background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0
 } */
 
 .slider {
-  padding: 0 10px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,8 +395,10 @@ background: radial-gradient(50.5% 72.67% at 50% 100%, #FF0000 0%, rgba(255, 0, 0
   background: radial-gradient(60.18% 50% at 50% 50%, #BB0000 0%, rgba(187, 0, 0, 0.276042) 70.83%, rgba(187, 0, 0, 0) 100%);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  width: 110px;
-  height: 70px;
+  max-width: 100px;
+  max-height: 65px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .statistics {
@@ -633,6 +636,53 @@ mix-blend-mode: screens; */
 
 .header {
   margin-left: 17%;
+}
+
+.footer {
+  margin-left: 23%;
+  margin-right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 13%;
+  max-width: 1000px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin-bottom: 30px;
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer__text-L {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+
+.footer__logo-container {
+  margin-top: 20px;
+}
+
+.footer__text-R {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /* Slider */
@@ -1029,29 +1079,6 @@ mix-blend-mode: screens; */
   color: #fff;
 }
 
-.text-left {
-  color: #fff;
-  margin-right: 13%;
-}
-
-.text-right {
-  color: #fff;
-}
-
-.footer {
-  margin-left: 18%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-}
-
 /* page contract */
 
 .content {
@@ -1267,6 +1294,21 @@ mix-blend-mode: screens; */
   margin-bottom: 44px;
 }
 
+.chicken__opening {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 370px;
+}
+
 .chicken__opening-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -1431,6 +1473,7 @@ mix-blend-mode: screens; */
   border: 3px solid #FF0000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 90%;
 }
 
 .chickenSlider__knife-fly {
@@ -1595,7 +1638,7 @@ mix-blend-mode: screens; */
   line-height: 19px;
   color: #FFFFFF;
   padding: 18px 20px;
-  margin-right: 132px;
+  margin-right: 25%;
   border: 1px solid #00FF0A;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1641,6 +1684,9 @@ mix-blend-mode: screens; */
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  width: 70%;
+  overflow: hidden;
+  max-width: 1000px;
   margin-bottom: 184px;
 }
 
@@ -1811,7 +1857,8 @@ mix-blend-mode: screens; */
   }
 
   .main {
-    margin-left: 0;
+    margin-right: 3%;
+    width: 70%;
   }
 
   #menu__toggle {
@@ -1885,14 +1932,6 @@ mix-blend-mode: screens; */
     margin-bottom: 10%;
   }
 
-  .lottery {
-    margin-top: 15%;
-  }
-
-  .lottery__title {
-    right: -50%;
-  }
-
   .slider__img {
     width: 100px;
     height: 60px;
@@ -1961,6 +2000,35 @@ mix-blend-mode: screens; */
 
   .chickenSlider {
     margin: 25%;
+  }
+
+  .chicken__title {
+    margin: 0 20%;
+  }
+
+  .random {
+    width: 70%;
+  }
+
+  .random__buttons {
+    width: 70%;
+  }
+
+  .chickenSlider {
+    width: 85%;
+  }
+
+  .footer__logo-container {
+    display: none;
+  }
+
+  .footer {
+    margin-right: 0;
+    margin-left: 17%;
+  }
+
+  .upgrade__objects {
+    margin-right: 0;
   }
 }
 

@@ -80,23 +80,6 @@
     }
 }
 
-.text-left {
-    color: #fff;
-    margin-right: 13%;
-}
-
-.text-right {
-    color: #fff;
-}
-
-.footer {
-    margin-left: 18%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
 
 /* page contract */
 
@@ -255,6 +238,13 @@
         color: #FFFFFF;
         margin-bottom: 44px;
     }
+    &__opening {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 370px;
+    }
     &__opening-text {
         font-family: "Roboto", sans-serif;
         font-style: normal;
@@ -309,6 +299,7 @@
     align-items: center;
     flex-wrap: wrap;
     max-width: 1000px;
+    // margin-bottom: 13%;
 }
 
 .сontent {
@@ -370,6 +361,7 @@
     margin-bottom: 117px;
     border: 3px solid #FF0000;
     box-sizing: border-box;
+    width: 90%;
     &__knife-fly {
         background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
         border-radius: 45px;
@@ -494,7 +486,7 @@
     line-height: 19px;
     color: #FFFFFF;
     padding: 18px 20px;
-    margin-right: 132px;
+    margin-right: 25%;
     border: 1px solid #00FF0A;
     box-sizing: border-box;
 }
@@ -530,6 +522,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 70%;
+    overflow: hidden;
+    max-width: 1000px;
     margin-bottom: 184px;
     &__selection {
         flex-direction: column;

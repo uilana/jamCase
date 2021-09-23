@@ -14,7 +14,8 @@
         margin-left: 0;
     }
     .main {
-        margin-left: 0;
+        margin-right: 3%;
+        width: 70%;
     }
     #menu__toggle {
         z-index: 15;
@@ -69,12 +70,6 @@
     .nav__panel-link {
         margin-bottom: 10%;
     }
-    .lottery {
-        margin-top: 15%;
-    }
-    .lottery__title {
-        right: -50%;
-    }
     .slider__img {
         width: 100px;
         height: 60px;
@@ -120,5 +115,27 @@
     }
     .chickenSlider {
         margin: 25%;
+    }
+    .chicken__title {
+        margin: 0 20%;
+    }
+    .random {
+        width: 70%;
+    }
+    .random__buttons {
+        width: 70%;
+    }
+    .chickenSlider {
+        width: 85%;
+    }
+    .footer__logo-container {
+        display: none;
+    }
+    .footer {
+        margin-right: 0;
+        margin-left: 17%;
+    }
+    .upgrade__objects {
+        margin-right: 0;
     }
 }
