@@ -365,8 +365,9 @@ mix-blend-mode: screens; */
     align-items: center;
     margin-bottom: 5%;
     &__timer {
-        font-family: Roboto Condensed;
+        font-family: "Roboto" Condensed;
         font-style: normal;
+        display: inherit;
         font-weight: normal;
         font-size: 36px;
         line-height: 42px;
@@ -375,7 +376,8 @@ mix-blend-mode: screens; */
         color: #FFFFFF;
         transform: rotate(-180deg);
     }
-    &__text {
+    &__timer-item {
+        display: inline;
         font-family: "Roboto", Condensed;
         font-style: normal;
         font-weight: normal;
@@ -383,9 +385,29 @@ mix-blend-mode: screens; */
         line-height: 28px;
         text-align: center;
         color: #FFFFFF;
-        transform: rotate(-180deg);
+        // transform: rotate(-180deg);
         padding: 28px;
     }
+    &__text {
+        font-family: "Roboto" Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+        transform: rotate(-180deg);
+    }
+    // &__timer-item::before {
+    //     transform: translateX(-50%);
+    //     content: attr(data-title);
+    //     position: absolute;
+    // }
+    // &__timer-item:not(:last-child)::after {
+    //     content: ':';
+    //     position: absolute;
+    //     right: -15px;
+    // }
 }
 
 .header {
