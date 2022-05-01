@@ -34,6 +34,7 @@ function reset() {
             chickenSliderItem.appendChild(chickenItemText)
             chickenSlider.appendChild(chickenSliderItem)
         }
+
         if (rand > 2 && rand < 5) {
             let chickenSliderItem = document.createElement("div")
             chickenSliderItem.className = `chickenSlider__${imgOpen.ak[1]}`
@@ -43,6 +44,45 @@ function reset() {
             let chickenItemText = document.createElement("p")
             chickenItemText.className = "chickenSlider__text"
             chickenItemText.innerText = `${imgOpen.ak[2]}`
+            chickenSliderItem.appendChild(chickenItemImg)
+            chickenSliderItem.appendChild(chickenItemText)
+            chickenSlider.appendChild(chickenSliderItem)
+        }
+        if (rand < 2 && rand < 7) {
+            let chickenSliderItem = document.createElement("div")
+            chickenSliderItem.className = `chickenSlider__${imgOpen.gloves[1]}`
+            let chickenItemImg = document.createElement("img")
+            chickenItemImg.className = "chickenSlider__img"
+            chickenItemImg.src = `image/${imgOpen.gloves[0]}`
+            let chickenItemText = document.createElement("p")
+            chickenItemText.className = "chickenSlider__text"
+            chickenItemText.innerText = `${imgOpen.gloves[2]}`
+            chickenSliderItem.appendChild(chickenItemImg)
+            chickenSliderItem.appendChild(chickenItemText)
+            chickenSlider.appendChild(chickenSliderItem)
+        }
+        if (rand < 2 && rand < 6) {
+            let chickenSliderItem = document.createElement("div")
+            chickenSliderItem.className = `chickenSlider__${imgOpen.M4A1[1]}`
+            let chickenItemImg = document.createElement("img")
+            chickenItemImg.className = "chickenSlider__img"
+            chickenItemImg.src = `image/${imgOpen.M4A1[0]}`
+            let chickenItemText = document.createElement("p")
+            chickenItemText.className = "chickenSlider__text"
+            chickenItemText.innerText = `${imgOpen.M4A1[2]}`
+            chickenSliderItem.appendChild(chickenItemImg)
+            chickenSliderItem.appendChild(chickenItemText)
+            chickenSlider.appendChild(chickenSliderItem)
+        }
+        if (rand < 2 && rand < 9) {
+            let chickenSliderItem = document.createElement("div")
+            chickenSliderItem.className = `chickenSlider__${imgOpen.knife[1]}`
+            let chickenItemImg = document.createElement("img")
+            chickenItemImg.className = "chickenSlider__img"
+            chickenItemImg.src = `image/${imgOpen.knife[0]}`
+            let chickenItemText = document.createElement("p")
+            chickenItemText.className = "chickenSlider__text"
+            chickenItemText.innerText = `${imgOpen.knife[2]}`
             chickenSliderItem.appendChild(chickenItemImg)
             chickenSliderItem.appendChild(chickenItemText)
             chickenSlider.appendChild(chickenSliderItem)
