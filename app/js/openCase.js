@@ -1,5 +1,7 @@
+// const { transform } = require("lodash")
 let button = document.querySelector(".chickenSlider__button")
 let chickenSlider = document.querySelector(".chickenSlider")
+let widthSlide = 130
 const imgOpen = {
     fly: ["knife-fly.png", "knife-fly", "Нож-бабочка"],
     ak: ["ak_1.png", "ak", "StatTrak™ AK-47"],
@@ -10,10 +12,13 @@ const imgOpen = {
 
 button.onclick = function() {
     chickenSlider.style.visibility = "visible"
-    reset()
+        // chickenSlider.removeChild()
+
+    openCase()
 
 }
 
+reset()
 
 function reset() {
 
@@ -21,7 +26,7 @@ function reset() {
         let rand = random(1, 100)
             // console.log(rand);
 
-        if (rand < 2) {
+        if (rand < 40) {
             let chickenSliderItem = document.createElement("div")
             chickenSliderItem.className = `chickenSlider__${imgOpen.fly[1]}`
             let chickenItemImg = document.createElement("img")
@@ -35,7 +40,7 @@ function reset() {
             chickenSlider.appendChild(chickenSliderItem)
         }
 
-        if (rand > 2 && rand < 5) {
+        if (rand > 40 && rand < 80) {
             let chickenSliderItem = document.createElement("div")
             chickenSliderItem.className = `chickenSlider__${imgOpen.ak[1]}`
             let chickenItemImg = document.createElement("img")
@@ -48,7 +53,7 @@ function reset() {
             chickenSliderItem.appendChild(chickenItemText)
             chickenSlider.appendChild(chickenSliderItem)
         }
-        if (rand < 2 && rand < 7) {
+        if (rand > 80 && rand < 120) {
             let chickenSliderItem = document.createElement("div")
             chickenSliderItem.className = `chickenSlider__${imgOpen.gloves[1]}`
             let chickenItemImg = document.createElement("img")
@@ -61,7 +66,7 @@ function reset() {
             chickenSliderItem.appendChild(chickenItemText)
             chickenSlider.appendChild(chickenSliderItem)
         }
-        if (rand < 2 && rand < 6) {
+        if (rand > 120 && rand < 150) {
             let chickenSliderItem = document.createElement("div")
             chickenSliderItem.className = `chickenSlider__${imgOpen.M4A1[1]}`
             let chickenItemImg = document.createElement("img")
@@ -74,7 +79,7 @@ function reset() {
             chickenSliderItem.appendChild(chickenItemText)
             chickenSlider.appendChild(chickenSliderItem)
         }
-        if (rand < 2 && rand < 9) {
+        if (rand > 150 && rand < 200) {
             let chickenSliderItem = document.createElement("div")
             chickenSliderItem.className = `chickenSlider__${imgOpen.knife[1]}`
             let chickenItemImg = document.createElement("img")
@@ -88,6 +93,17 @@ function reset() {
             chickenSlider.appendChild(chickenSliderItem)
         }
     }
+}
+
+function openCase() {
+    let openRandom = random(0, 190)
+    let firstSlideItem = chickenSlider.firstChild
+        // firstSlideItem.animate({
+        //         marginLeft: openRandom * widthSlide
+        //     }, 2000)
+    firstSlideItem.animate([{ transform: `translateX (${openRandom*widthSlide})` }], { duration: 1000 })
+        // chickenSlider.scrollLeft = openRandom * widthSlide
+
 }
 // console.log(random(0, 100));
 
