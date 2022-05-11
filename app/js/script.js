@@ -2,7 +2,7 @@
 // let hour = date.getHours();
 // let minutes = date.getMinutes();
 // let seconds = date.getSeconds();
-let end = new Date(2022, 3, 29, 20, 40, 53);
+let end = new Date(2022, 4, 29, 20, 40, 53);
 
 
 function innerHTMLTimer(days, hours, minutes, seconds) {

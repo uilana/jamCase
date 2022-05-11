@@ -1482,27 +1482,20 @@ mix-blend-mode: screens; */
 }
 
 .chickenSlider {
-  visibility: hidden;
+  visibility: visible;
   padding: 0 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  width: 823px;
   height: 193.97px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 45px;
-  margin-bottom: 117px;
+  margin-bottom: 10px;
   border: 3px solid #FF0000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1510,22 +1503,25 @@ mix-blend-mode: screens; */
 }
 
 .chickenSlider__knife-fly {
+  -webkit-transition: 5s ease;
+  -o-transition: 5s ease;
+  transition: 5s ease;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 1, 32, 0.147)), to(rgba(97, 0, 255, 0.18)));
   background: -o-linear-gradient(top, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
   background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
   border-radius: 45px;
   width: 118px;
   height: 158px;
-  margin: 13px;
+  margin: 10px;
   border: 3px solid #6100FF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .chickenSlider__img {
-  width: 102.09px;
-  height: 102.09px;
-  margin: 10px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
 }
 
 .chickenSlider__text {
@@ -1548,7 +1544,11 @@ mix-blend-mode: screens; */
   margin: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 5s ease;
+  -o-transition: 5s ease;
+  transition: 5s ease;
   position: relative;
+  border: 3px solid #6100FF;
 }
 
 .chickenSlider__ak::before {
@@ -1571,6 +1571,9 @@ mix-blend-mode: screens; */
   background: linear-gradient(180deg, rgba(255, 1, 32, 0.147) 0%, rgba(97, 0, 255, 0.18) 100%);
   border-radius: 45px;
   width: 118px;
+  -webkit-transition: 5s ease;
+  -o-transition: 5s ease;
+  transition: 5s ease;
   height: 163px;
   margin: 10px;
   border: 3px solid #6100FF;
@@ -1584,6 +1587,9 @@ mix-blend-mode: screens; */
   background: linear-gradient(180deg, rgba(255, 230, 1, 0.18) 0%, rgba(51, 255, 0, 0.18) 100%);
   border-radius: 45px;
   width: 118px;
+  -webkit-transition: 5s ease;
+  -o-transition: 5s ease;
+  transition: 5s ease;
   height: 163px;
   margin: 10px;
   border: 3px solid #33FF00;
@@ -1598,10 +1604,27 @@ mix-blend-mode: screens; */
   border-radius: 45px;
   width: 118px;
   height: 163px;
+  -webkit-transition: 5s ease;
+  -o-transition: 5s ease;
+  transition: 5s ease;
   margin: 10px;
   border: 3px solid #FF0000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.chickenCaseSlider__img {
+  margin-left: 10px;
+  margin-bottom: 90px;
+}
+
+.chickenCaseSlider__img-arrow {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .chickenSlider__button {
